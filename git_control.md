@@ -14,8 +14,8 @@ Team -> Remote -> Push to Upstream
 "This will add to your fork"
 
 ### Bring Forks together
-"go to your branch online"
-"https://github.com/\<your user\>/locker-db"
+"go to your branch online:"
+"https://github.com/<your user\>/locker-db"
 
 #### New Pull Request
 
