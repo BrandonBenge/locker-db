@@ -6,3 +6,5 @@ url: https://github.com/BrandonBenge/locker-db
 
 ## Interaction
 
+Team -> commit
+"add comments about what you are doing"
