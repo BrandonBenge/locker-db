@@ -1,8 +1,12 @@
 # Working doc on git control in NetBeans
 
 ## Fork 
-url: https://github.com/BrandonBenge/locker-db
+URL: https://github.com/BrandonBenge/locker-db
 "on the top right you will see fork"
+
+## Clone to local 
+Team -> Git -> Clone 
+URL to use: https://github.com/<your user\>/locker-db.git
 
 ## Interaction
 
