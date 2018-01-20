@@ -15,7 +15,7 @@ Team -> Remote -> Push to Upstream
 
 ### Bring Forks together
 "go to your branch online"
-https://github.com/<your user>/locker-db
+https://github.com/\<your user\>/locker-db
 
 #### New Pull Request
 
@@ -23,7 +23,7 @@ https://github.com/<your user>/locker-db
 set base fork to: "GeneBuchite/locker-db"
 set base: "master"
 
-set head fork to: "<your user>/locker-db
+set head fork to: "\<your user\>/locker-db
 set compare: "master"
 
 #### Create pull request
