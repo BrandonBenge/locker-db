@@ -1,4 +1,8 @@
 # Working doc on git control in NetBeans
+In the following we will walk through git processes
+1) if you are just starting to use the project then do "Fork" -> "Clone" first
+2) on a regular bases you just use "Commit" 
+   Note: You only do "New Pull Request" when you have finished a "feature"
 
 ## Fork 
 URL: https://github.com/BrandonBenge/locker-db
@@ -8,7 +12,7 @@ URL: https://github.com/BrandonBenge/locker-db
 Team -> Git -> Clone 
 URL to use: https://github.com/<your user\>/locker-db.git
 
-## Interaction
+## Commit
 
 ### Local interaction with Fork
 Team -> commit
