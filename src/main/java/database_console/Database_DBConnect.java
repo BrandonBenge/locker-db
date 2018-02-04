@@ -3,19 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.locker.connect;
+package database_console;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.ResultSet;
+
+
 /**
  *
  * @author genebuchite
  */
 public class Database_DBConnect {
-        /**
+
+    /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -44,5 +47,5 @@ public class Database_DBConnect {
           System.out.println(ex.getMessage());
         }
     }
-
+    
 }
