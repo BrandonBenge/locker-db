@@ -24,7 +24,7 @@ public class Database_DBConnect {
     public static void main(String[] args) {
         // TODO code application logic here
         try {
-        String host = "jdbc:mysql://localhost:3307/freezer";
+        String host = "jdbc:mariadb://localhost:3307/freezer";
         String uName="root";
         String uPass="mylockerpass";
         Connection con = DriverManager.getConnection(host, uName, uPass);
