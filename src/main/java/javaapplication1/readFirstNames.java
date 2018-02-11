@@ -26,7 +26,7 @@ public class readFirstNames{
              
      try{
         System.out.println("Started");
-        String host = "jdbc:mysql://localhost:3306/lockerdata";//?zeroDateTimeBehavior=convertToNull [root on Default schema]";
+        String host = "jdbc:mariadb://localhost:3307/lockerdata";//?zeroDateTimeBehavior=convertToNull [root on Default schema]";
         String uName = "root";
         String uPass = "mylockerpass";
         ctd.con = DriverManager.getConnection(host,uName,uPass);

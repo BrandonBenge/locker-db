@@ -23,7 +23,7 @@ public class ConToData {
   public void DoConnect() {
   
       try {
-      String host = "jdbc:mysql://localhost:3306/lockerdata";
+      String host = "jdbc:mariadb://localhost:3307/lockerdata";
       String uName = "root";
       String uPass = "mylockerpass";
       con = DriverManager.getConnection(host,uName,uPass);
