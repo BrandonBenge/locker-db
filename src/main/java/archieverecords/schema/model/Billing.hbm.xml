@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 4:24:52 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="archieverecords" dynamic-insert="false" dynamic-update="false" mutable="true" name="archieverecords.schema.model.Billing" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="billing">
+        <composite-id class="archieverecords.schema.model.BillingId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="animalId" type="string">
+                <column length="10" name="AnimalId"/>
+            </key-property>
+            <key-property name="quantity" type="string">
+                <column length="10" name="Quantity"/>
+            </key-property>
+            <key-property name="description" type="string">
+                <column length="50" name="Description"/>
+            </key-property>
+            <key-property name="amount" type="java.lang.Double">
+                <column name="Amount" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="category" type="string">
+                <column length="50" name="Category"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

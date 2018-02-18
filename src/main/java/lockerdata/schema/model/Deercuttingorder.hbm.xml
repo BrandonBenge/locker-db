@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.Deercuttingorder" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="deercuttingorder">
+        <composite-id class="lockerdata.schema.model.DeercuttingorderId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="counter" type="string">
+                <column length="10" name="Counter"/>
+            </key-property>
+            <key-property name="fullName" type="string">
+                <column length="75" name="FullName"/>
+            </key-property>
+            <key-property name="chops" type="string">
+                <column length="50" name="Chops"/>
+            </key-property>
+            <key-property name="steaks" type="string">
+                <column length="50" name="Steaks"/>
+            </key-property>
+            <key-property name="roasts" type="string">
+                <column length="50" name="Roasts"/>
+            </key-property>
+            <key-property name="ground" type="string">
+                <column length="50" name="Ground"/>
+            </key-property>
+            <key-property name="groundPkg" type="string">
+                <column length="10" name="GroundPkg"/>
+            </key-property>
+            <key-property name="written" type="string">
+                <column name="Written"/>
+            </key-property>
+            <key-property name="bsausages" type="java.lang.Boolean">
+                <column name="bSausages"/>
+            </key-property>
+            <key-property name="sausagePercents1" type="string">
+                <column length="50" name="SausagePercents1"/>
+            </key-property>
+            <key-property name="sp1" type="string">
+                <column length="50" name="SP1"/>
+            </key-property>
+            <key-property name="sausagePercents2" type="string">
+                <column length="50" name="SausagePercents2"/>
+            </key-property>
+            <key-property name="sp2" type="string">
+                <column length="50" name="SP2"/>
+            </key-property>
+            <key-property name="sausagePercents3" type="string">
+                <column length="50" name="SausagePercents3"/>
+            </key-property>
+            <key-property name="sp3" type="string">
+                <column length="50" name="Sp3"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

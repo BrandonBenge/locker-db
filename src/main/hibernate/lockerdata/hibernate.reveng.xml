@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-catalog="lockerdata" match-name="account" />
+	<table-filter match-catalog="lockerdata" match-name="archieve" />
+	<table-filter match-catalog="lockerdata" match-name="authorities" />
+	<table-filter match-catalog="lockerdata" match-name="beef" />
+	<table-filter match-catalog="lockerdata" match-name="beefcutting" />
+	<table-filter match-catalog="lockerdata" match-name="beefweights" />
+	<table-filter match-catalog="lockerdata" match-name="billing" />
+	<table-filter match-catalog="lockerdata" match-name="billingnew" />
+	<table-filter match-catalog="lockerdata" match-name="billingold" />
+	<table-filter match-catalog="lockerdata" match-name="bit" />
+	<table-filter match-catalog="lockerdata" match-name="breed" />
+	<table-filter match-catalog="lockerdata" match-name="carriers" />
+	<table-filter match-catalog="lockerdata" match-name="carryin" />
+	<table-filter match-catalog="lockerdata"
+		match-name="cash report sheet" />
+	<table-filter match-catalog="lockerdata" match-name="cellinfo" />
+	<table-filter match-catalog="lockerdata" match-name="chadsmith" />
+	<table-filter match-catalog="lockerdata" match-name="charges1" />
+	<table-filter match-catalog="lockerdata" match-name="charges2" />
+	<table-filter match-catalog="lockerdata" match-name="condit" />
+	<table-filter match-catalog="lockerdata" match-name="cool" />
+	<table-filter match-catalog="lockerdata" match-name="curingjournal" />
+	<table-filter match-catalog="lockerdata" match-name="customers" />
+	<table-filter match-catalog="lockerdata" match-name="cuttingtest" />
+	<table-filter match-catalog="lockerdata" match-name="deer" />
+	<table-filter match-catalog="lockerdata" match-name="deercount" />
+	<table-filter match-catalog="lockerdata"
+		match-name="deercuttingorder" />
+	<table-filter match-catalog="lockerdata" match-name="establishment" />
+	<table-filter match-catalog="lockerdata" match-name="hides" />
+	<table-filter match-catalog="lockerdata" match-name="history" />
+	<table-filter match-catalog="lockerdata" match-name="ingredients" />
+	<table-filter match-catalog="lockerdata" match-name="locker" />
+	<table-filter match-catalog="lockerdata" match-name="lockerold" />
+	<table-filter match-catalog="lockerdata"
+		match-name="lockerrentagreement" />
+	<table-filter match-catalog="lockerdata" match-name="msg" />
+	<table-filter match-catalog="lockerdata" match-name="myprinters" />
+	<table-filter match-catalog="lockerdata" match-name="notes" />
+	<table-filter match-catalog="lockerdata" match-name="paidout" />
+	<table-filter match-catalog="lockerdata" match-name="pastsqls" />
+	<table-filter match-catalog="lockerdata" match-name="porkcutting" />
+	<table-filter match-catalog="lockerdata" match-name="prices" />
+	<table-filter match-catalog="lockerdata" match-name="printers" />
+	<table-filter match-catalog="lockerdata" match-name="retaillist" />
+	<table-filter match-catalog="lockerdata" match-name="sausage" />
+	<table-filter match-catalog="lockerdata" match-name="sausages" />
+	<table-filter match-catalog="lockerdata" match-name="seasoning" />
+	<table-filter match-catalog="lockerdata" match-name="test" />
+	<table-filter match-catalog="lockerdata" match-name="town" />
+	<table-filter match-catalog="lockerdata" match-name="traceback" />
+	<table-filter match-catalog="lockerdata" match-name="usdaplu" />
+	<table-filter match-catalog="lockerdata" match-name="xactions" />
+	<table-filter match-catalog="lockerdata" match-name="xdeposits" />
+	<table-filter match-catalog="lockerdata" match-name="ztill" />
+	<table catalog="lockerdata" name="authorities">
+		<column name="Phone#" property="phoneNumber"></column>
+	</table>
+	<table catalog="lockerdata" name="cash report sheet">
+		<column name="SUBTOTAL 1" property="subtotal1"></column>
+		<column name="SUBTOTAL 2" property="subtotal2"></column>
+	</table>
+	<table catalog="lockerdata" name="hides">
+		<column name="#" property="poundSign"></column>
+	</table>
+	<table catalog="lockerdata" name="history">
+		<column name="Check#" property="checkNumber"></column>
+		<column name="Locker #" property="lockerNumber"></column>
+		<column name="# of Lockers" property="numberOfLockers"></column>
+	</table>
+	<table catalog="lockerdata" name="locker">
+		<column name="Locker #" property="lockerNumber"></column>
+		<column name="# of Lockers" property="numberOfLockers"></column>
+	</table>
+	<table catalog="lockerdata" name="lockerold">
+		<column name="# of Lockers" property="numberOfLockers"></column>
+		<column name="Locker #" property="lockerNumber"></column>
+	</table>
+	<table catalog="lockerdata" name="xactions">
+		<column name="Transaction#" property="transactionNumber"></column>
+	</table>
+	<table catalog="lockerdata" name="ztill">
+		<column name="Curing/Seasoning" property="curingSeasoning"></column>
+	</table>
+	<table catalog="lockerdata" name="cash report sheet">
+		<column name="CASH OVER/UNDER" property="cashOverUnder"></column>
+	</table>
+</hibernate-reverse-engineering>

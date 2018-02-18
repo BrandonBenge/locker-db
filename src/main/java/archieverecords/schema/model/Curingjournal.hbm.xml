@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 4:24:52 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="archieverecords" dynamic-insert="false" dynamic-update="false" mutable="true" name="archieverecords.schema.model.Curingjournal" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="curingjournal">
+        <composite-id class="archieverecords.schema.model.CuringjournalId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="animalId" type="string">
+                <column length="10" name="AnimalID"/>
+            </key-property>
+            <key-property name="hams" type="int">
+                <column name="Hams"/>
+            </key-property>
+            <key-property name="bacons" type="int">
+                <column name="Bacons"/>
+            </key-property>
+            <key-property name="ark" type="int">
+                <column name="Ark"/>
+            </key-property>
+            <key-property name="shoulders" type="int">
+                <column name="Shoulders"/>
+            </key-property>
+            <key-property name="loins" type="int">
+                <column name="Loins"/>
+            </key-property>
+            <key-property name="ribs" type="int">
+                <column name="Ribs"/>
+            </key-property>
+            <key-property name="hocksYn" type="boolean">
+                <column name="HocksYN"/>
+            </key-property>
+            <key-property name="hocks" type="int">
+                <column name="Hocks"/>
+            </key-property>
+            <key-property name="jowl" type="int">
+                <column name="Jowl"/>
+            </key-property>
+            <key-property name="begin" type="java.lang.Integer">
+                <column name="Begin"/>
+            </key-property>
+            <key-property name="end" type="java.lang.Integer">
+                <column name="End"/>
+            </key-property>
+            <key-property name="weight" type="java.lang.Double">
+                <column name="Weight" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="otherName" type="string">
+                <column length="50" name="OtherName"/>
+            </key-property>
+            <key-property name="otherCount" type="int">
+                <column name="OtherCount"/>
+            </key-property>
+            <key-property name="deliveryDate" type="date">
+                <column length="10" name="DeliveryDate"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

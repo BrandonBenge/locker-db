@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.Printers" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="printers">
+        <composite-id class="lockerdata.schema.model.PrintersId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="id" type="int">
+                <column name="ID"/>
+            </key-property>
+            <key-property name="printer" type="string">
+                <column name="Printer"/>
+            </key-property>
+            <key-property name="printerName" type="string">
+                <column name="PrinterName"/>
+            </key-property>
+            <key-property name="computer" type="string">
+                <column name="Computer"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

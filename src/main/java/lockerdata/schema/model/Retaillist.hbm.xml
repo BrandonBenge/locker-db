@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.Retaillist" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="retaillist">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="ctid" optimistic-lock="true" type="int" unique="false">
+            <column name="CTID" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="retailName" optimistic-lock="true" type="string" unique="false">
+            <column name="RetailName" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="retailPrice" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="RetailPrice" not-null="true" precision="9"/>
+        </property>
+        <property generated="never" lazy="false" name="weight" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="Weight" precision="9"/>
+        </property>
+        <property generated="never" lazy="false" name="extendedPrice" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="ExtendedPrice" precision="9"/>
+        </property>
+    </class>
+</hibernate-mapping>

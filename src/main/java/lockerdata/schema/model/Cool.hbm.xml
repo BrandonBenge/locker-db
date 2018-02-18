@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.Cool" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="cool">
+        <id name="boxNumber" type="java.lang.Integer">
+            <column name="BoxNumber"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="establishmentNumber" optimistic-lock="true" type="string" unique="false">
+            <column length="15" name="EstablishmentNumber" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="lotNumber" optimistic-lock="true" type="string" unique="false">
+            <column name="LotNumber" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="productionDate" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="ProductionDate"/>
+        </property>
+        <property generated="never" lazy="false" name="productionTime" optimistic-lock="true" type="string" unique="false">
+            <column length="7" name="ProductionTime"/>
+        </property>
+        <property generated="never" lazy="false" name="primal" optimistic-lock="true" type="string" unique="false">
+            <column name="Primal" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="dateRecieved" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="DateRecieved" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="weight" optimistic-lock="true" type="string" unique="false">
+            <column name="Weight"/>
+        </property>
+        <property generated="never" lazy="false" name="ppp" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="PPP" precision="9"/>
+        </property>
+    </class>
+</hibernate-mapping>

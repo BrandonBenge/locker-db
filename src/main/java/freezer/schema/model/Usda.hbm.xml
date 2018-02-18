@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 3:45:47 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="freezer" dynamic-insert="false" dynamic-update="false" mutable="true" name="freezer.schema.model.Usda" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="usda">
+        <composite-id class="freezer.schema.model.UsdaId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="catagory" type="string">
+                <column length="50" name="Catagory"/>
+            </key-property>
+            <key-property name="plu" type="int">
+                <column name="PLU"/>
+            </key-property>
+            <key-property name="description" type="string">
+                <column name="Description"/>
+            </key-property>
+            <key-property name="ingredients" type="string">
+                <column length="50" name="Ingredients"/>
+            </key-property>
+            <key-property name="shelfLife" type="java.lang.Short">
+                <column name="ShelfLife"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -35,6 +35,11 @@ GRANT ALL ON freezer.* TO 'mylocker_app'@'localhost';
 
 GRANT ALL ON lockerdata.* TO 'mylocker_app'@'localhost';
 
+use archieverecords;
+alter table `cash report sheet` CHANGE `CURING & SEASONING` `CURINGANDSEASONING` decimal(19,4) DEFAULT NULL;
+use lockerdata;
+alter table `cash report sheet` CHANGE `CURING & SEASONING` `CURINGANDSEASONING` decimal(19,4) DEFAULT NULL;
+alter table `xdeposits` change `xAction#` `xActionNumber` bigint(20) NOT NULL;
 
 ## how to access mysql from command line
 mysql -u root -p -h 0.0.0.0 -P 3307

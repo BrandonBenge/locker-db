@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 3:45:47 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="freezer" dynamic-insert="false" dynamic-update="false" mutable="true" name="freezer.schema.model.Timesheet" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="timesheet">
+        <id name="counter" type="int">
+            <column name="Counter"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="fullName" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="FullNAme" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="starting" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="Starting" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="regHours" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="RegHours" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="othours" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="OTHours" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="holiday" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="Holiday" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="holidayHours" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="HolidayHours" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="pulled" optimistic-lock="true" type="java.lang.Boolean" unique="false">
+            <column name="Pulled"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.Beefcutting" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="beefcutting">
+        <composite-id class="lockerdata.schema.model.BeefcuttingId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="counter" type="int">
+                <column name="Counter"/>
+            </key-property>
+            <key-property name="fullName" type="string">
+                <column length="250" name="FullName"/>
+            </key-property>
+            <key-property name="date" type="timestamp">
+                <column length="26" name="Date"/>
+            </key-property>
+            <key-property name="tagNumber" type="java.lang.Integer">
+                <column name="TagNumber"/>
+            </key-property>
+            <key-property name="order" type="string">
+                <column length="50" name="Order"/>
+            </key-property>
+            <key-property name="special" type="string">
+                <column length="2500" name="Special"/>
+            </key-property>
+            <key-property name="steak" type="string">
+                <column length="10" name="Steak"/>
+            </key-property>
+            <key-property name="shortRibsTp" type="string">
+                <column length="10" name="ShortRibsTP"/>
+            </key-property>
+            <key-property name="shortRibs" type="string">
+                <column length="50" name="ShortRibs"/>
+            </key-property>
+            <key-property name="shortRibsCt" type="string">
+                <column length="10" name="ShortRibsCt"/>
+            </key-property>
+            <key-property name="roast" type="string">
+                <column length="10" name="Roast"/>
+            </key-property>
+            <key-property name="boilingBeeftp" type="string">
+                <column length="10" name="BoilingBeeftp"/>
+            </key-property>
+            <key-property name="boilingBeef" type="string">
+                <column length="50" name="BoilingBeef"/>
+            </key-property>
+            <key-property name="boilingBeefct" type="string">
+                <column length="10" name="BoilingBeefct"/>
+            </key-property>
+            <key-property name="soupBonesTp" type="short">
+                <column name="SoupBonesTp"/>
+            </key-property>
+            <key-property name="soupBones" type="string">
+                <column length="50" name="SoupBones"/>
+            </key-property>
+            <key-property name="soupBonesct" type="string">
+                <column length="10" name="SoupBonesct"/>
+            </key-property>
+            <key-property name="ribTp" type="short">
+                <column name="RibTp"/>
+            </key-property>
+            <key-property name="rib" type="string">
+                <column length="50" name="Rib"/>
+            </key-property>
+            <key-property name="ribct" type="string">
+                <column length="10" name="Ribct"/>
+            </key-property>
+            <key-property name="chuckRoasttp" type="string">
+                <column length="10" name="ChuckRoasttp"/>
+            </key-property>
+            <key-property name="chuckRoast" type="string">
+                <column length="50" name="ChuckRoast"/>
+            </key-property>
+            <key-property name="chuckRoastct" type="string">
+                <column length="10" name="ChuckRoastct"/>
+            </key-property>
+            <key-property name="chuckSteaktp" type="string">
+                <column length="10" name="ChuckSteaktp"/>
+            </key-property>
+            <key-property name="chuckSteak" type="string">
+                <column length="50" name="ChuckSteak"/>
+            </key-property>
+            <key-property name="chuckSteakct" type="string">
+                <column length="20" name="ChuckSteakct"/>
+            </key-property>
+            <key-property name="armTp" type="short">
+                <column name="ArmTp"/>
+            </key-property>
+            <key-property name="arm" type="string">
+                <column length="20" name="Arm"/>
+            </key-property>
+            <key-property name="armct" type="string">
+                <column length="10" name="Armct"/>
+            </key-property>
+            <key-property name="sirloinTiptp" type="short">
+                <column name="SirloinTiptp"/>
+            </key-property>
+            <key-property name="sirloinTip" type="string">
+                <column length="50" name="SirloinTip"/>
+            </key-property>
+            <key-property name="sirloinTipct" type="string">
+                <column length="10" name="SirloinTipct"/>
+            </key-property>
+            <key-property name="tbonetp" type="short">
+                <column name="TBonetp"/>
+            </key-property>
+            <key-property name="tbone" type="string">
+                <column length="50" name="tBone"/>
+            </key-property>
+            <key-property name="tbonect" type="short">
+                <column name="tBonect"/>
+            </key-property>
+            <key-property name="porterhousetp" type="short">
+                <column name="Porterhousetp"/>
+            </key-property>
+            <key-property name="porterhouse" type="string">
+                <column length="50" name="Porterhouse"/>
+            </key-property>
+            <key-property name="porterhousect" type="short">
+                <column name="Porterhousect"/>
+            </key-property>
+            <key-property name="sirlointp" type="short">
+                <column name="Sirlointp"/>
+            </key-property>
+            <key-property name="sirloin" type="string">
+                <column length="50" name="Sirloin"/>
+            </key-property>
+            <key-property name="sirloinct" type="short">
+                <column name="Sirloinct"/>
+            </key-property>
+            <key-property name="roundtp" type="short">
+                <column name="Roundtp"/>
+            </key-property>
+            <key-property name="round" type="string">
+                <column length="50" name="Round"/>
+            </key-property>
+            <key-property name="roundct" type="short">
+                <column name="Roundct"/>
+            </key-property>
+            <key-property name="rump" type="string">
+                <column length="50" name="Rump"/>
+            </key-property>
+            <key-property name="rumpct" type="short">
+                <column name="Rumpct"/>
+            </key-property>
+            <key-property name="pikes" type="string">
+                <column length="50" name="Pikes"/>
+            </key-property>
+            <key-property name="pikesct" type="short">
+                <column name="Pikesct"/>
+            </key-property>
+            <key-property name="stew" type="string">
+                <column length="50" name="Stew"/>
+            </key-property>
+            <key-property name="stewCt" type="short">
+                <column name="StewCt"/>
+            </key-property>
+            <key-property name="ground" type="string">
+                <column length="50" name="Ground"/>
+            </key-property>
+            <key-property name="groundpk" type="string">
+                <column length="15" name="Groundpk"/>
+            </key-property>
+            <key-property name="groundct" type="string">
+                <column length="10" name="Groundct"/>
+            </key-property>
+            <key-property name="doubleWrapp" type="boolean">
+                <column name="DoubleWrapp"/>
+            </key-property>
+            <key-property name="brisket" type="string">
+                <column length="50" name="Brisket"/>
+            </key-property>
+            <key-property name="brisketct" type="string">
+                <column length="10" name="Brisketct"/>
+            </key-property>
+            <key-property name="beefId" type="int">
+                <column name="BeefID"/>
+            </key-property>
+            <key-property name="liveWeight" type="int">
+                <column name="LiveWeight"/>
+            </key-property>
+            <key-property name="hangingWeight" type="string">
+                <column length="10" name="HangingWeight"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 3:45:47 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="freezer" dynamic-insert="false" dynamic-update="false" mutable="true" name="freezer.schema.model.Beefs1" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="beefs1">
+        <composite-id class="freezer.schema.model.Beefs1Id" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="i1" type="string">
+                <column length="50" name="1"/>
+            </key-property>
+            <key-property name="i2" type="string">
+                <column length="50" name="2"/>
+            </key-property>
+            <key-property name="i3" type="string">
+                <column length="50" name="3"/>
+            </key-property>
+            <key-property name="i4" type="string">
+                <column length="50" name="4"/>
+            </key-property>
+            <key-property name="i5" type="string">
+                <column length="50" name="5"/>
+            </key-property>
+            <key-property name="i6" type="string">
+                <column length="50" name="6"/>
+            </key-property>
+            <key-property name="i7" type="string">
+                <column length="50" name="7"/>
+            </key-property>
+            <key-property name="i8" type="string">
+                <column length="50" name="8"/>
+            </key-property>
+            <key-property name="i9" type="string">
+                <column length="50" name="9"/>
+            </key-property>
+            <key-property name="i10" type="string">
+                <column length="50" name="10"/>
+            </key-property>
+            <key-property name="i11" type="string">
+                <column length="50" name="11"/>
+            </key-property>
+            <key-property name="i12" type="string">
+                <column length="50" name="12"/>
+            </key-property>
+            <key-property name="i13" type="string">
+                <column length="50" name="13"/>
+            </key-property>
+            <key-property name="i14" type="string">
+                <column length="50" name="14"/>
+            </key-property>
+            <key-property name="i15" type="string">
+                <column length="50" name="15"/>
+            </key-property>
+            <key-property name="i16" type="string">
+                <column length="50" name="16"/>
+            </key-property>
+            <key-property name="i17" type="string">
+                <column length="50" name="17"/>
+            </key-property>
+            <key-property name="i18" type="string">
+                <column length="50" name="18"/>
+            </key-property>
+            <key-property name="i19" type="string">
+                <column length="50" name="19"/>
+            </key-property>
+            <key-property name="i20" type="string">
+                <column length="50" name="20"/>
+            </key-property>
+            <key-property name="i21" type="string">
+                <column length="50" name="21"/>
+            </key-property>
+            <key-property name="i22" type="string">
+                <column length="50" name="22"/>
+            </key-property>
+            <key-property name="i23" type="string">
+                <column length="50" name="23"/>
+            </key-property>
+            <key-property name="i24" type="string">
+                <column length="50" name="24"/>
+            </key-property>
+            <key-property name="i25" type="string">
+                <column length="50" name="25"/>
+            </key-property>
+            <key-property name="i26" type="string">
+                <column length="50" name="26"/>
+            </key-property>
+            <key-property name="i27" type="string">
+                <column length="50" name="27"/>
+            </key-property>
+            <key-property name="i28" type="string">
+                <column length="50" name="28"/>
+            </key-property>
+            <key-property name="i29" type="string">
+                <column length="50" name="29"/>
+            </key-property>
+            <key-property name="i30" type="string">
+                <column length="50" name="30"/>
+            </key-property>
+            <key-property name="i31" type="string">
+                <column length="50" name="31"/>
+            </key-property>
+            <key-property name="i32" type="string">
+                <column length="50" name="32"/>
+            </key-property>
+            <key-property name="i33" type="string">
+                <column length="50" name="33"/>
+            </key-property>
+            <key-property name="i34" type="string">
+                <column length="50" name="34"/>
+            </key-property>
+            <key-property name="i35" type="string">
+                <column length="50" name="35"/>
+            </key-property>
+            <key-property name="i36" type="string">
+                <column length="50" name="36"/>
+            </key-property>
+            <key-property name="i37" type="string">
+                <column length="50" name="37"/>
+            </key-property>
+            <key-property name="i38" type="string">
+                <column length="50" name="38"/>
+            </key-property>
+            <key-property name="i39" type="string">
+                <column length="50" name="39"/>
+            </key-property>
+            <key-property name="i40" type="string">
+                <column length="50" name="40"/>
+            </key-property>
+            <key-property name="i41" type="string">
+                <column length="50" name="41"/>
+            </key-property>
+            <key-property name="i42" type="string">
+                <column length="50" name="42"/>
+            </key-property>
+            <key-property name="i43" type="string">
+                <column length="50" name="43"/>
+            </key-property>
+            <key-property name="i44" type="string">
+                <column length="50" name="44"/>
+            </key-property>
+            <key-property name="i45" type="string">
+                <column length="50" name="45"/>
+            </key-property>
+            <key-property name="i46" type="string">
+                <column length="50" name="46"/>
+            </key-property>
+            <key-property name="i47" type="string">
+                <column length="50" name="47"/>
+            </key-property>
+            <key-property name="i48" type="string">
+                <column length="50" name="48"/>
+            </key-property>
+            <key-property name="i49" type="string">
+                <column length="50" name="49"/>
+            </key-property>
+            <key-property name="i50" type="string">
+                <column length="50" name="50"/>
+            </key-property>
+            <key-property name="i51" type="string">
+                <column length="50" name="51"/>
+            </key-property>
+            <key-property name="i52" type="string">
+                <column length="50" name="52"/>
+            </key-property>
+            <key-property name="i53" type="string">
+                <column length="50" name="53"/>
+            </key-property>
+            <key-property name="i54" type="string">
+                <column length="50" name="54"/>
+            </key-property>
+            <key-property name="i55" type="string">
+                <column length="50" name="55"/>
+            </key-property>
+            <key-property name="i56" type="string">
+                <column length="50" name="56"/>
+            </key-property>
+            <key-property name="i57" type="string">
+                <column length="50" name="57"/>
+            </key-property>
+            <key-property name="i58" type="string">
+                <column length="50" name="58"/>
+            </key-property>
+            <key-property name="i59" type="string">
+                <column length="50" name="59"/>
+            </key-property>
+            <key-property name="i60" type="string">
+                <column length="50" name="60"/>
+            </key-property>
+            <key-property name="i61" type="string">
+                <column length="50" name="61"/>
+            </key-property>
+            <key-property name="i62" type="string">
+                <column length="50" name="62"/>
+            </key-property>
+            <key-property name="i63" type="string">
+                <column length="50" name="63"/>
+            </key-property>
+            <key-property name="i64" type="string">
+                <column length="50" name="64"/>
+            </key-property>
+            <key-property name="i65" type="string">
+                <column length="50" name="65"/>
+            </key-property>
+            <key-property name="i66" type="string">
+                <column length="50" name="66"/>
+            </key-property>
+            <key-property name="i67" type="string">
+                <column length="50" name="67"/>
+            </key-property>
+            <key-property name="i68" type="string">
+                <column length="50" name="68"/>
+            </key-property>
+            <key-property name="i69" type="string">
+                <column length="50" name="69"/>
+            </key-property>
+            <key-property name="i70" type="string">
+                <column length="50" name="70"/>
+            </key-property>
+            <key-property name="i71" type="string">
+                <column length="50" name="71"/>
+            </key-property>
+            <key-property name="i72" type="string">
+                <column length="50" name="72"/>
+            </key-property>
+            <key-property name="i73" type="string">
+                <column length="50" name="73"/>
+            </key-property>
+            <key-property name="i74" type="string">
+                <column length="50" name="74"/>
+            </key-property>
+            <key-property name="i75" type="string">
+                <column length="50" name="75"/>
+            </key-property>
+            <key-property name="i76" type="string">
+                <column length="50" name="76"/>
+            </key-property>
+            <key-property name="i77" type="string">
+                <column length="50" name="77"/>
+            </key-property>
+            <key-property name="i78" type="string">
+                <column length="50" name="78"/>
+            </key-property>
+            <key-property name="i79" type="string">
+                <column length="50" name="79"/>
+            </key-property>
+            <key-property name="i80" type="string">
+                <column length="50" name="80"/>
+            </key-property>
+            <key-property name="i81" type="string">
+                <column length="50" name="81"/>
+            </key-property>
+            <key-property name="i82" type="string">
+                <column length="50" name="82"/>
+            </key-property>
+            <key-property name="i83" type="string">
+                <column length="50" name="83"/>
+            </key-property>
+            <key-property name="i84" type="string">
+                <column length="50" name="84"/>
+            </key-property>
+            <key-property name="i85" type="string">
+                <column length="50" name="85"/>
+            </key-property>
+            <key-property name="i86" type="string">
+                <column length="50" name="86"/>
+            </key-property>
+            <key-property name="i87" type="string">
+                <column length="50" name="87"/>
+            </key-property>
+            <key-property name="i88" type="string">
+                <column length="50" name="88"/>
+            </key-property>
+            <key-property name="i89" type="string">
+                <column length="50" name="89"/>
+            </key-property>
+            <key-property name="i90" type="string">
+                <column length="50" name="90"/>
+            </key-property>
+            <key-property name="i91" type="string">
+                <column length="50" name="91"/>
+            </key-property>
+            <key-property name="i92" type="string">
+                <column length="50" name="92"/>
+            </key-property>
+            <key-property name="i93" type="string">
+                <column length="50" name="93"/>
+            </key-property>
+            <key-property name="i94" type="string">
+                <column length="50" name="94"/>
+            </key-property>
+            <key-property name="i95" type="string">
+                <column length="50" name="95"/>
+            </key-property>
+            <key-property name="i96" type="string">
+                <column length="50" name="96"/>
+            </key-property>
+            <key-property name="i97" type="string">
+                <column length="50" name="97"/>
+            </key-property>
+            <key-property name="i98" type="string">
+                <column length="50" name="98"/>
+            </key-property>
+            <key-property name="i99" type="string">
+                <column length="50" name="99"/>
+            </key-property>
+            <key-property name="i100" type="string">
+                <column length="50" name="100"/>
+            </key-property>
+            <key-property name="i101" type="string">
+                <column length="50" name="101"/>
+            </key-property>
+            <key-property name="i102" type="string">
+                <column length="50" name="102"/>
+            </key-property>
+            <key-property name="i103" type="string">
+                <column length="50" name="103"/>
+            </key-property>
+            <key-property name="i104" type="string">
+                <column length="50" name="104"/>
+            </key-property>
+            <key-property name="i105" type="string">
+                <column length="50" name="105"/>
+            </key-property>
+            <key-property name="i106" type="string">
+                <column length="50" name="106"/>
+            </key-property>
+            <key-property name="i107" type="string">
+                <column length="50" name="107"/>
+            </key-property>
+            <key-property name="i108" type="string">
+                <column length="50" name="108"/>
+            </key-property>
+            <key-property name="i109" type="string">
+                <column length="50" name="109"/>
+            </key-property>
+            <key-property name="i110" type="string">
+                <column length="50" name="110"/>
+            </key-property>
+            <key-property name="i111" type="string">
+                <column length="50" name="111"/>
+            </key-property>
+            <key-property name="i112" type="string">
+                <column length="50" name="112"/>
+            </key-property>
+            <key-property name="i113" type="string">
+                <column length="50" name="113"/>
+            </key-property>
+            <key-property name="i114" type="string">
+                <column length="50" name="114"/>
+            </key-property>
+            <key-property name="i115" type="string">
+                <column length="50" name="115"/>
+            </key-property>
+            <key-property name="i116" type="string">
+                <column length="50" name="116"/>
+            </key-property>
+            <key-property name="i117" type="string">
+                <column length="50" name="117"/>
+            </key-property>
+            <key-property name="i118" type="string">
+                <column length="50" name="118"/>
+            </key-property>
+            <key-property name="i119" type="string">
+                <column length="50" name="119"/>
+            </key-property>
+            <key-property name="i120" type="string">
+                <column length="50" name="120"/>
+            </key-property>
+            <key-property name="i121" type="string">
+                <column length="50" name="121"/>
+            </key-property>
+            <key-property name="i122" type="string">
+                <column length="50" name="122"/>
+            </key-property>
+            <key-property name="i123" type="string">
+                <column length="50" name="123"/>
+            </key-property>
+            <key-property name="i124" type="string">
+                <column length="50" name="124"/>
+            </key-property>
+            <key-property name="i125" type="string">
+                <column length="50" name="125"/>
+            </key-property>
+            <key-property name="i126" type="string">
+                <column length="50" name="126"/>
+            </key-property>
+            <key-property name="i127" type="string">
+                <column length="50" name="127"/>
+            </key-property>
+            <key-property name="i128" type="string">
+                <column length="50" name="128"/>
+            </key-property>
+            <key-property name="i129" type="string">
+                <column length="50" name="129"/>
+            </key-property>
+            <key-property name="i130" type="string">
+                <column length="50" name="130"/>
+            </key-property>
+            <key-property name="i131" type="string">
+                <column length="50" name="131"/>
+            </key-property>
+            <key-property name="i132" type="string">
+                <column length="50" name="132"/>
+            </key-property>
+            <key-property name="i133" type="string">
+                <column length="50" name="133"/>
+            </key-property>
+            <key-property name="i134" type="string">
+                <column length="50" name="134"/>
+            </key-property>
+            <key-property name="i135" type="string">
+                <column length="50" name="135"/>
+            </key-property>
+            <key-property name="i136" type="string">
+                <column length="50" name="136"/>
+            </key-property>
+            <key-property name="i137" type="string">
+                <column length="50" name="137"/>
+            </key-property>
+            <key-property name="i138" type="string">
+                <column length="50" name="138"/>
+            </key-property>
+            <key-property name="i139" type="string">
+                <column length="50" name="139"/>
+            </key-property>
+            <key-property name="i140" type="string">
+                <column length="50" name="140"/>
+            </key-property>
+            <key-property name="i141" type="string">
+                <column length="50" name="141"/>
+            </key-property>
+            <key-property name="i142" type="string">
+                <column length="50" name="142"/>
+            </key-property>
+            <key-property name="i143" type="string">
+                <column length="50" name="143"/>
+            </key-property>
+            <key-property name="i144" type="string">
+                <column length="50" name="144"/>
+            </key-property>
+            <key-property name="i145" type="string">
+                <column length="50" name="145"/>
+            </key-property>
+            <key-property name="i146" type="string">
+                <column length="50" name="146"/>
+            </key-property>
+            <key-property name="i147" type="string">
+                <column length="50" name="147"/>
+            </key-property>
+            <key-property name="i148" type="string">
+                <column length="50" name="148"/>
+            </key-property>
+            <key-property name="i149" type="string">
+                <column length="50" name="149"/>
+            </key-property>
+            <key-property name="i150" type="string">
+                <column length="50" name="150"/>
+            </key-property>
+            <key-property name="i151" type="string">
+                <column length="50" name="151"/>
+            </key-property>
+            <key-property name="i152" type="string">
+                <column length="50" name="152"/>
+            </key-property>
+            <key-property name="i153" type="string">
+                <column length="50" name="153"/>
+            </key-property>
+            <key-property name="i154" type="string">
+                <column length="50" name="154"/>
+            </key-property>
+            <key-property name="i155" type="string">
+                <column length="50" name="155"/>
+            </key-property>
+            <key-property name="i156" type="string">
+                <column length="50" name="156"/>
+            </key-property>
+            <key-property name="i157" type="string">
+                <column length="50" name="157"/>
+            </key-property>
+            <key-property name="i158" type="string">
+                <column length="50" name="158"/>
+            </key-property>
+            <key-property name="i159" type="string">
+                <column length="50" name="159"/>
+            </key-property>
+            <key-property name="i160" type="string">
+                <column length="50" name="160"/>
+            </key-property>
+            <key-property name="i161" type="string">
+                <column length="50" name="161"/>
+            </key-property>
+            <key-property name="i162" type="string">
+                <column length="50" name="162"/>
+            </key-property>
+            <key-property name="i163" type="string">
+                <column length="50" name="163"/>
+            </key-property>
+            <key-property name="i164" type="string">
+                <column length="50" name="164"/>
+            </key-property>
+            <key-property name="i165" type="string">
+                <column length="50" name="165"/>
+            </key-property>
+            <key-property name="i166" type="string">
+                <column length="50" name="166"/>
+            </key-property>
+            <key-property name="i167" type="string">
+                <column length="50" name="167"/>
+            </key-property>
+            <key-property name="i168" type="string">
+                <column length="50" name="168"/>
+            </key-property>
+            <key-property name="i169" type="string">
+                <column length="50" name="169"/>
+            </key-property>
+            <key-property name="i170" type="string">
+                <column length="50" name="170"/>
+            </key-property>
+            <key-property name="i171" type="string">
+                <column length="50" name="171"/>
+            </key-property>
+            <key-property name="i172" type="string">
+                <column length="50" name="172"/>
+            </key-property>
+            <key-property name="i173" type="string">
+                <column length="50" name="173"/>
+            </key-property>
+            <key-property name="i174" type="string">
+                <column length="50" name="174"/>
+            </key-property>
+            <key-property name="i175" type="string">
+                <column length="50" name="175"/>
+            </key-property>
+            <key-property name="i176" type="string">
+                <column length="50" name="176"/>
+            </key-property>
+            <key-property name="i177" type="string">
+                <column length="50" name="177"/>
+            </key-property>
+            <key-property name="i178" type="string">
+                <column length="50" name="178"/>
+            </key-property>
+            <key-property name="i179" type="string">
+                <column length="50" name="179"/>
+            </key-property>
+            <key-property name="i180" type="string">
+                <column length="50" name="180"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

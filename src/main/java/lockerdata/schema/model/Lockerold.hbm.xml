@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.Lockerold" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="lockerold">
+        <composite-id class="lockerdata.schema.model.LockeroldId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="preference" type="double">
+                <column name="Preference" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="lockerNumber" type="string">
+                <column length="50" name="`Locker #`"/>
+            </key-property>
+            <key-property name="firstName" type="string">
+                <column length="50" name="`First Name`"/>
+            </key-property>
+            <key-property name="lastName" type="string">
+                <column length="50" name="`Last Name`"/>
+            </key-property>
+            <key-property name="fullName" type="string">
+                <column length="50" name="`Full Name`"/>
+            </key-property>
+            <key-property name="timeDue" type="java.lang.Double">
+                <column name="`Time Due`" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="dateDue" type="timestamp">
+                <column length="26" name="`Date due`"/>
+            </key-property>
+            <key-property name="amountPaid" type="java.lang.Double">
+                <column name="`Amount Paid`" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="rate" type="java.lang.Double">
+                <column name="Rate" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="numberOfLockers" type="java.lang.Double">
+                <column name="`# of Lockers`" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="todaysDate" type="timestamp">
+                <column length="26" name="`Todays Date`"/>
+            </key-property>
+            <key-property name="amountDue" type="java.lang.Double">
+                <column name="`Amount Due`" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="lastTransaction" type="timestamp">
+                <column length="26" name="`Last Transaction`"/>
+            </key-property>
+            <key-property name="amountOfLast" type="string">
+                <column length="50" name="`Amount of Last`"/>
+            </key-property>
+            <key-property name="lastDateDue" type="timestamp">
+                <column length="26" name="`Last Date Due`"/>
+            </key-property>
+            <key-property name="secondLast" type="timestamp">
+                <column length="26" name="`Second Last`"/>
+            </key-property>
+            <key-property name="secondLastAmmount" type="big_decimal">
+                <column name="`Second Last Ammount`" scale="4"/>
+            </key-property>
+            <key-property name="secondLastDateDue" type="timestamp">
+                <column length="26" name="`Second Last Date Due`"/>
+            </key-property>
+            <key-property name="locker1" type="string">
+                <column length="4" name="Locker1"/>
+            </key-property>
+            <key-property name="locker2" type="string">
+                <column length="4" name="Locker2"/>
+            </key-property>
+            <key-property name="locker3" type="string">
+                <column length="4" name="Locker3"/>
+            </key-property>
+            <key-property name="locker4" type="string">
+                <column length="4" name="Locker4"/>
+            </key-property>
+            <key-property name="locker5" type="string">
+                <column length="4" name="Locker5"/>
+            </key-property>
+            <key-property name="locker6" type="string">
+                <column length="4" name="Locker6"/>
+            </key-property>
+            <key-property name="locker7" type="string">
+                <column length="4" name="Locker7"/>
+            </key-property>
+            <key-property name="aflag" type="boolean">
+                <column name="AFlag"/>
+            </key-property>
+            <key-property name="each" type="boolean">
+                <column name="Each"/>
+            </key-property>
+            <key-property name="print" type="boolean">
+                <column name="Print"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

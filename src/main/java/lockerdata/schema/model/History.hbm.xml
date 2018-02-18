@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.History" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="history">
+        <id name="counter" type="java.lang.Integer">
+            <column name="Counter"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="lockerNumber" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="`Locker #`" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="fullName" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="`Full Name`"/>
+        </property>
+        <property generated="never" lazy="false" name="dateDue" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="26" name="`Date due`"/>
+        </property>
+        <property generated="never" lazy="false" name="amountPaid" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="`Amount Paid`" scale="4"/>
+        </property>
+        <property generated="never" lazy="false" name="rate" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="Rate" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="numberOfLockers" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="`# of Lockers`" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="todaysDate" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="26" name="`Todays Date`"/>
+        </property>
+        <property generated="never" lazy="false" name="checkNumber" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="Check#"/>
+        </property>
+        <property generated="never" lazy="false" name="ztill" optimistic-lock="true" type="boolean" unique="false">
+            <column name="ZTill" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

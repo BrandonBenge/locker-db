@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.Traceback" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="traceback">
+        <id name="counter" type="java.lang.Integer">
+            <column name="Counter"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="customerId" optimistic-lock="true" type="int" unique="false">
+            <column name="CustomerID" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="product" optimistic-lock="true" type="string" unique="false">
+            <column length="40" name="Product" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="boxNumber" optimistic-lock="true" type="int" unique="false">
+            <column name="BoxNumber" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="beefCounter" optimistic-lock="true" type="int" unique="false">
+            <column name="beefCounter" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="dateGround" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="26" name="DateGround" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="saniDate" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="26" name="SaniDate" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="pkgCount" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="PkgCount"/>
+        </property>
+    </class>
+</hibernate-mapping>

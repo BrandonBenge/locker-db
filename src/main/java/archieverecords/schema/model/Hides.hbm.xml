@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 4:24:52 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="archieverecords" dynamic-insert="false" dynamic-update="false" mutable="true" name="archieverecords.schema.model.Hides" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="hides">
+        <composite-id class="archieverecords.schema.model.HidesId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="date" type="date">
+                <column length="10" name="Date"/>
+            </key-property>
+            <key-property name="poundSign" type="java.lang.Double">
+                <column name="#" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="amount" type="big_decimal">
+                <column name="Amount" scale="4"/>
+            </key-property>
+            <key-property name="salt" type="boolean">
+                <column name="Salt"/>
+            </key-property>
+            <key-property name="saltAmount" type="big_decimal">
+                <column name="SaltAmount" scale="4"/>
+            </key-property>
+            <key-property name="lastId" type="java.lang.Float">
+                <column name="LastID" precision="24" scale="0"/>
+            </key-property>
+            <key-property name="zed" type="java.lang.Boolean">
+                <column name="Zed"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

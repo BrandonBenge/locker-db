@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.Porkcutting" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="porkcutting">
+        <composite-id class="lockerdata.schema.model.PorkcuttingId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="counter" type="int">
+                <column name="Counter"/>
+            </key-property>
+            <key-property name="beefId" type="int">
+                <column name="BeefID"/>
+            </key-property>
+            <key-property name="name" type="string">
+                <column length="250" name="Name"/>
+            </key-property>
+            <key-property name="deliveryDate" type="date">
+                <column length="10" name="DeliveryDate"/>
+            </key-property>
+            <key-property name="chops" type="string">
+                <column length="50" name="Chops"/>
+            </key-property>
+            <key-property name="picnic" type="string">
+                <column length="50" name="Picnic"/>
+            </key-property>
+            <key-property name="bostonButt" type="string">
+                <column length="50" name="BostonButt"/>
+            </key-property>
+            <key-property name="freshSide" type="string">
+                <column length="50" name="FreshSide"/>
+            </key-property>
+            <key-property name="freshHam" type="string">
+                <column length="50" name="FreshHam"/>
+            </key-property>
+            <key-property name="spareRibs" type="string">
+                <column length="50" name="SpareRibs"/>
+            </key-property>
+            <key-property name="sausage" type="string">
+                <column length="50" name="Sausage"/>
+            </key-property>
+            <key-property name="lard" type="string">
+                <column length="50" name="Lard"/>
+            </key-property>
+            <key-property name="head" type="string">
+                <column length="50" name="Head"/>
+            </key-property>
+            <key-property name="jowl" type="string">
+                <column length="50" name="Jowl"/>
+            </key-property>
+            <key-property name="hocks" type="string">
+                <column length="50" name="Hocks"/>
+            </key-property>
+            <key-property name="curedHam" type="string">
+                <column length="50" name="CuredHam"/>
+            </key-property>
+            <key-property name="curedBacon" type="string">
+                <column length="50" name="CuredBacon"/>
+            </key-property>
+            <key-property name="ctChops" type="int">
+                <column name="ctChops"/>
+            </key-property>
+            <key-property name="ctPicnic" type="int">
+                <column name="ctPicnic"/>
+            </key-property>
+            <key-property name="ctBoston" type="int">
+                <column name="ctBoston"/>
+            </key-property>
+            <key-property name="ctFreshSide" type="int">
+                <column name="ctFreshSide"/>
+            </key-property>
+            <key-property name="ctFreshHam" type="int">
+                <column name="ctFreshHam"/>
+            </key-property>
+            <key-property name="ctSpareRibs" type="int">
+                <column name="ctSpareRibs"/>
+            </key-property>
+            <key-property name="ctSausage" type="int">
+                <column name="ctSausage"/>
+            </key-property>
+            <key-property name="ctJowl" type="int">
+                <column name="ctJowl"/>
+            </key-property>
+            <key-property name="ctHocks" type="int">
+                <column name="ctHocks"/>
+            </key-property>
+            <key-property name="ctCuredHam" type="int">
+                <column name="ctCuredHam"/>
+            </key-property>
+            <key-property name="ctCuredBacon" type="int">
+                <column name="ctCuredBacon"/>
+            </key-property>
+            <key-property name="chopstp" type="int">
+                <column name="Chopstp"/>
+            </key-property>
+            <key-property name="curedHigh" type="int">
+                <column name="CuredHigh"/>
+            </key-property>
+            <key-property name="curedLow" type="int">
+                <column name="CuredLow"/>
+            </key-property>
+            <key-property name="special" type="string">
+                <column length="4000" name="Special"/>
+            </key-property>
+            <key-property name="cloin" type="string">
+                <column length="50" name="CLoin"/>
+            </key-property>
+            <key-property name="cark" type="string">
+                <column length="50" name="CArk"/>
+            </key-property>
+            <key-property name="cshoulder" type="string">
+                <column length="50" name="CShoulder"/>
+            </key-property>
+            <key-property name="cjowl" type="string">
+                <column length="50" name="CJowl"/>
+            </key-property>
+            <key-property name="chock" type="string">
+                <column length="50" name="CHock"/>
+            </key-property>
+            <key-property name="clc" type="string">
+                <column length="10" name="cLc"/>
+            </key-property>
+            <key-property name="cac" type="string">
+                <column length="10" name="cAc"/>
+            </key-property>
+            <key-property name="csc" type="string">
+                <column length="10" name="cSc"/>
+            </key-property>
+            <key-property name="cjc" type="string">
+                <column length="10" name="cJc"/>
+            </key-property>
+            <key-property name="chc" type="string">
+                <column length="10" name="cHc"/>
+            </key-property>
+            <key-property name="ccuredHam" type="string">
+                <column length="10" name="cCuredHAm"/>
+            </key-property>
+            <key-property name="ccuredBacon" type="string">
+                <column length="10" name="cCuredBacon"/>
+            </key-property>
+            <key-property name="tagNumber" type="java.lang.Integer">
+                <column name="TagNumber"/>
+            </key-property>
+            <key-property name="liveWeight" type="java.lang.Integer">
+                <column name="LiveWeight"/>
+            </key-property>
+            <key-property name="hangingWeight" type="java.lang.Integer">
+                <column name="HangingWeight"/>
+            </key-property>
+            <key-property name="order" type="java.lang.Integer">
+                <column name="Order"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

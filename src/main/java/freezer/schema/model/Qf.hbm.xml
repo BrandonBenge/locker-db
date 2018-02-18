@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 3:45:47 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="freezer" dynamic-insert="false" dynamic-update="false" mutable="true" name="freezer.schema.model.Qf" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="qf">
+        <composite-id class="freezer.schema.model.QfId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="i1" type="string">
+                <column length="50" name="1"/>
+            </key-property>
+            <key-property name="i2" type="string">
+                <column length="50" name="2"/>
+            </key-property>
+            <key-property name="i3" type="string">
+                <column length="50" name="3"/>
+            </key-property>
+            <key-property name="i4" type="string">
+                <column length="50" name="4"/>
+            </key-property>
+            <key-property name="i5" type="string">
+                <column length="50" name="5"/>
+            </key-property>
+            <key-property name="i6" type="string">
+                <column length="50" name="6"/>
+            </key-property>
+            <key-property name="i7" type="string">
+                <column length="50" name="7"/>
+            </key-property>
+            <key-property name="i8" type="string">
+                <column length="50" name="8"/>
+            </key-property>
+            <key-property name="i9" type="string">
+                <column length="50" name="9"/>
+            </key-property>
+            <key-property name="i10" type="string">
+                <column length="50" name="10"/>
+            </key-property>
+            <key-property name="i11" type="string">
+                <column length="50" name="11"/>
+            </key-property>
+            <key-property name="i12" type="string">
+                <column length="50" name="12"/>
+            </key-property>
+            <key-property name="i13" type="string">
+                <column length="50" name="13"/>
+            </key-property>
+            <key-property name="i14" type="string">
+                <column length="50" name="14"/>
+            </key-property>
+            <key-property name="i15" type="string">
+                <column length="50" name="15"/>
+            </key-property>
+            <key-property name="i16" type="string">
+                <column length="50" name="16"/>
+            </key-property>
+            <key-property name="i17" type="string">
+                <column length="50" name="17"/>
+            </key-property>
+            <key-property name="i18" type="string">
+                <column length="50" name="18"/>
+            </key-property>
+            <key-property name="i19" type="string">
+                <column length="50" name="19"/>
+            </key-property>
+            <key-property name="i20" type="string">
+                <column length="50" name="20"/>
+            </key-property>
+            <key-property name="i21" type="string">
+                <column length="50" name="21"/>
+            </key-property>
+            <key-property name="i22" type="string">
+                <column length="50" name="22"/>
+            </key-property>
+            <key-property name="i23" type="string">
+                <column length="50" name="23"/>
+            </key-property>
+            <key-property name="i24" type="string">
+                <column length="50" name="24"/>
+            </key-property>
+            <key-property name="i25" type="string">
+                <column length="50" name="25"/>
+            </key-property>
+            <key-property name="i26" type="string">
+                <column length="50" name="26"/>
+            </key-property>
+            <key-property name="i27" type="string">
+                <column length="50" name="27"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

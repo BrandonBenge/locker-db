@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.Ztill" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="ztill">
+        <composite-id class="lockerdata.schema.model.ZtillId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="date" type="timestamp">
+                <column length="26" name="Date"/>
+            </key-property>
+            <key-property name="meatSales" type="java.lang.Double">
+                <column name="MeatSales" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="lockerRent" type="java.lang.Double">
+                <column name="LockerRent" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="tax" type="java.lang.Double">
+                <column name="Tax" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="processing" type="java.lang.Double">
+                <column name="Processing" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="porkProcessing" type="java.lang.Double">
+                <column name="PorkProcessing" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="deerProcessing" type="java.lang.Double">
+                <column name="DeerProcessing" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="curingSeasoning" type="java.lang.Double">
+                <column name="Curing/Seasoning" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="hides" type="big_decimal">
+                <column name="Hides" scale="4"/>
+            </key-property>
+            <key-property name="dogFood" type="big_decimal">
+                <column name="`DOG FOOD`" scale="4"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

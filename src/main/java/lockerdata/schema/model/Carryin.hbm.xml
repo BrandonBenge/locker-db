@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.Carryin" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="carryin">
+        <composite-id class="lockerdata.schema.model.CarryinId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="counter" type="long">
+                <column name="Counter"/>
+            </key-property>
+            <key-property name="charge" type="string">
+                <column length="50" name="Charge"/>
+            </key-property>
+            <key-property name="weight" type="string">
+                <column length="10" name="Weight"/>
+            </key-property>
+            <key-property name="amt" type="big_decimal">
+                <column name="Amt" precision="10" scale="4"/>
+            </key-property>
+            <key-property name="license" type="string">
+                <column length="50" name="License"/>
+            </key-property>
+            <key-property name="checkStation" type="string">
+                <column length="50" name="CheckStation"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

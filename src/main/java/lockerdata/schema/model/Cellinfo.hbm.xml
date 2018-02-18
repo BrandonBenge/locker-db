@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.Cellinfo" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="cellinfo">
+        <composite-id class="lockerdata.schema.model.CellinfoId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="customerId" type="int">
+                <column name="CustomerID"/>
+            </key-property>
+            <key-property name="cellPhone" type="string">
+                <column name="CellPhone"/>
+            </key-property>
+            <key-property name="carrier" type="string">
+                <column name="Carrier"/>
+            </key-property>
+            <key-property name="sendText" type="boolean">
+                <column name="SendText"/>
+            </key-property>
+            <key-property name="sendEmail" type="boolean">
+                <column name="SendEmail"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

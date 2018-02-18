@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.Cuttingtest" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="cuttingtest">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="boxNumber" optimistic-lock="true" type="string" unique="false">
+            <column name="BoxNumber" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="totalCost" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="TotalCost" not-null="true" precision="9"/>
+        </property>
+        <property generated="never" lazy="false" name="weightToTest" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="WeightToTest" not-null="true" precision="9"/>
+        </property>
+        <property generated="never" lazy="false" name="cost" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="Cost" not-null="true" precision="9"/>
+        </property>
+        <property generated="never" lazy="false" name="finalWeight" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="FinalWeight" not-null="true" precision="9"/>
+        </property>
+        <property generated="never" lazy="false" name="loss" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="Loss" not-null="true" precision="9"/>
+        </property>
+        <property generated="never" lazy="false" name="costToSell" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="CostToSell" not-null="true" precision="9"/>
+        </property>
+        <property generated="never" lazy="false" name="markUp" optimistic-lock="true" type="string" unique="false">
+            <column name="MarkUp" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="pricePerLb" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="PricePerLB" not-null="true" precision="9"/>
+        </property>
+        <property generated="never" lazy="false" name="date" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="Date" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="primal" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="Primal" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

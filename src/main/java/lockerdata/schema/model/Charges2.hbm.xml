@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.Charges2" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="charges2">
+        <composite-id class="lockerdata.schema.model.Charges2Id" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="myItem" type="string">
+                <column length="50" name="MyItem"/>
+            </key-property>
+            <key-property name="cost" type="big_decimal">
+                <column name="Cost" scale="4"/>
+            </key-property>
+            <key-property name="category" type="string">
+                <column length="17" name="Category"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

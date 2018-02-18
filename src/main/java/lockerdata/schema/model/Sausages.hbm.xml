@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.Sausages" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="sausages">
+        <composite-id class="lockerdata.schema.model.SausagesId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="type" type="string">
+                <column length="50" name="Type"/>
+            </key-property>
+            <key-property name="meat" type="java.lang.Double">
+                <column name="Meat" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="pork" type="java.lang.Double">
+                <column name="Pork" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="other" type="java.lang.Double">
+                <column name="other" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="seasoning" type="string">
+                <column length="50" name="Seasoning"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

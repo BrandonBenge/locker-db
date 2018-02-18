@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 3:45:47 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="freezer" dynamic-insert="false" dynamic-update="false" mutable="true" name="freezer.schema.model.Timenotes" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="timenotes">
+        <id name="counter" type="java.lang.Integer">
+            <column name="Counter"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="employee" optimistic-lock="true" type="string" unique="false">
+            <column name="Employee" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="remind" optimistic-lock="true" type="int" unique="false">
+            <column name="Remind" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="note" optimistic-lock="true" type="string" unique="false">
+            <column name="Note" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="startDate" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="StartDate"/>
+        </property>
+        <property generated="never" lazy="false" name="endDate" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="EndDate"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 5:14:43 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="lockerdata" dynamic-insert="false" dynamic-update="false" mutable="true" name="lockerdata.schema.model.Xactions" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="xactions">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="counter" optimistic-lock="true" type="int" unique="false">
+            <column name="Counter" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="date" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="Date"/>
+        </property>
+        <property generated="never" lazy="false" name="time" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="26" name="Time"/>
+        </property>
+        <property generated="never" lazy="false" name="species" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="Species"/>
+        </property>
+        <property generated="never" lazy="false" name="meatSales" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="MeatSales" precision="24" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="tax" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="Tax" precision="24" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="nontax" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="NONTax" precision="24" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="lockerRent" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="LockerRent" precision="24" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="curing" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="Curing" precision="24" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="processing" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="Processing" precision="24" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="pprocessing" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="PProcessing" precision="24" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="dprocessing" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="DProcessing" precision="24" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="other" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="Other" precision="24" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="total" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="Total" precision="24" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="method" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="Method"/>
+        </property>
+        <property generated="never" lazy="false" name="amount" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="Amount" precision="24" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="change" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="Change" precision="24" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="zzed" optimistic-lock="true" type="boolean" unique="false">
+            <column name="Zzed" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="name" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="Name"/>
+        </property>
+        <property generated="never" lazy="false" name="multi" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="Multi" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="transactionNumber" optimistic-lock="true" type="double" unique="false">
+            <column name="Transaction#" not-null="true" precision="22" scale="0"/>
+        </property>
+    </class>
+</hibernate-mapping>

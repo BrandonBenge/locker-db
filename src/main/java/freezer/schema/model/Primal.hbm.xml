@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 3:45:47 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="freezer" dynamic-insert="false" dynamic-update="false" mutable="true" name="freezer.schema.model.Primal" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="primal">
+        <composite-id class="freezer.schema.model.PrimalId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="id" type="int">
+                <column name="ID"/>
+            </key-property>
+            <key-property name="primal" type="string">
+                <column length="50" name="Primal"/>
+            </key-property>
+            <key-property name="species" type="java.lang.Double">
+                <column name="Species" precision="22" scale="0"/>
+            </key-property>
+            <key-property name="porder" type="java.lang.Double">
+                <column name="pOrder" precision="22" scale="0"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

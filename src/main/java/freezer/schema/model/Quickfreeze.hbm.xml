@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 3:45:47 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="freezer" dynamic-insert="false" dynamic-update="false" mutable="true" name="freezer.schema.model.Quickfreeze" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="quickfreeze">
+        <composite-id class="freezer.schema.model.QuickfreezeId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="location" type="int">
+                <column name="Location"/>
+            </key-property>
+            <key-property name="i1" type="string">
+                <column length="50" name="1"/>
+            </key-property>
+            <key-property name="i2" type="string">
+                <column length="50" name="2"/>
+            </key-property>
+            <key-property name="i3" type="string">
+                <column length="50" name="3"/>
+            </key-property>
+            <key-property name="i4" type="string">
+                <column length="50" name="4"/>
+            </key-property>
+            <key-property name="i5" type="string">
+                <column length="50" name="5"/>
+            </key-property>
+            <key-property name="i6" type="string">
+                <column length="50" name="6"/>
+            </key-property>
+            <key-property name="i7" type="string">
+                <column length="50" name="7"/>
+            </key-property>
+            <key-property name="i8" type="string">
+                <column length="50" name="8"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 3:45:47 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="freezer" dynamic-insert="false" dynamic-update="false" mutable="true" name="freezer.schema.model.Porkdw" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="porkdw">
+        <composite-id class="freezer.schema.model.PorkdwId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="dw1" type="string">
+                <column length="50" name="Dw1"/>
+            </key-property>
+            <key-property name="dw2" type="string">
+                <column length="50" name="Dw2"/>
+            </key-property>
+            <key-property name="dw3" type="string">
+                <column length="50" name="Dw3"/>
+            </key-property>
+            <key-property name="dw4" type="string">
+                <column length="50" name="Dw4"/>
+            </key-property>
+            <key-property name="dw5" type="string">
+                <column length="50" name="Dw5"/>
+            </key-property>
+            <key-property name="dw6" type="string">
+                <column length="50" name="Dw6"/>
+            </key-property>
+            <key-property name="dw7" type="string">
+                <column length="50" name="Dw7"/>
+            </key-property>
+            <key-property name="dw8" type="string">
+                <column length="50" name="Dw8"/>
+            </key-property>
+            <key-property name="dw9" type="string">
+                <column length="50" name="Dw9"/>
+            </key-property>
+            <key-property name="dwA" type="string">
+                <column length="50" name="DwA"/>
+            </key-property>
+            <key-property name="dwB" type="string">
+                <column length="50" name="DwB"/>
+            </key-property>
+            <key-property name="dwC" type="string">
+                <column length="50" name="DwC"/>
+            </key-property>
+            <key-property name="dwD" type="string">
+                <column length="50" name="DwD"/>
+            </key-property>
+            <key-property name="dwE" type="string">
+                <column length="50" name="DwE"/>
+            </key-property>
+            <key-property name="dw11" type="string">
+                <column length="50" name="Dw11"/>
+            </key-property>
+            <key-property name="dw12" type="string">
+                <column length="50" name="Dw12"/>
+            </key-property>
+            <key-property name="dw13" type="string">
+                <column length="50" name="Dw13"/>
+            </key-property>
+            <key-property name="dw14" type="string">
+                <column length="50" name="Dw14"/>
+            </key-property>
+            <key-property name="dw15" type="string">
+                <column length="50" name="Dw15"/>
+            </key-property>
+            <key-property name="dw16" type="string">
+                <column length="50" name="Dw16"/>
+            </key-property>
+            <key-property name="dw17" type="string">
+                <column length="50" name="Dw17"/>
+            </key-property>
+            <key-property name="dw18" type="string">
+                <column length="50" name="Dw18"/>
+            </key-property>
+            <key-property name="dw19" type="string">
+                <column length="50" name="Dw19"/>
+            </key-property>
+            <key-property name="dw1a" type="string">
+                <column length="50" name="Dw1A"/>
+            </key-property>
+            <key-property name="dw1b" type="string">
+                <column length="50" name="Dw1B"/>
+            </key-property>
+            <key-property name="dw1c" type="string">
+                <column length="50" name="Dw1C"/>
+            </key-property>
+            <key-property name="dw1d" type="string">
+                <column length="50" name="Dw1D"/>
+            </key-property>
+            <key-property name="dw1e" type="string">
+                <column length="50" name="Dw1E"/>
+            </key-property>
+            <key-property name="dw21" type="string">
+                <column length="50" name="Dw21"/>
+            </key-property>
+            <key-property name="dw22" type="string">
+                <column length="50" name="Dw22"/>
+            </key-property>
+            <key-property name="dw23" type="string">
+                <column length="50" name="Dw23"/>
+            </key-property>
+            <key-property name="dw24" type="string">
+                <column length="50" name="Dw24"/>
+            </key-property>
+            <key-property name="dw25" type="string">
+                <column length="50" name="Dw25"/>
+            </key-property>
+            <key-property name="dw26" type="string">
+                <column length="50" name="Dw26"/>
+            </key-property>
+            <key-property name="dw27" type="string">
+                <column length="50" name="Dw27"/>
+            </key-property>
+            <key-property name="dw28" type="string">
+                <column length="50" name="Dw28"/>
+            </key-property>
+            <key-property name="dw29" type="string">
+                <column length="50" name="Dw29"/>
+            </key-property>
+            <key-property name="dw2a" type="string">
+                <column length="50" name="Dw2A"/>
+            </key-property>
+            <key-property name="dw2b" type="string">
+                <column length="50" name="Dw2B"/>
+            </key-property>
+            <key-property name="dw2c" type="string">
+                <column length="50" name="Dw2C"/>
+            </key-property>
+            <key-property name="dw2d" type="string">
+                <column length="50" name="Dw2D"/>
+            </key-property>
+            <key-property name="dw2e" type="string">
+                <column length="50" name="Dw2E"/>
+            </key-property>
+            <key-property name="dw2f" type="string">
+                <column length="50" name="Dw2F"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

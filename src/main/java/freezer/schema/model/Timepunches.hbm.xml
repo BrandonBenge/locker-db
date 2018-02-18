@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 17, 2018 3:45:47 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="freezer" dynamic-insert="false" dynamic-update="false" mutable="true" name="freezer.schema.model.Timepunches" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="timepunches">
+        <composite-id class="freezer.schema.model.TimepunchesId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="counter" type="int">
+                <column name="Counter"/>
+            </key-property>
+            <key-property name="intime" type="string">
+                <column length="50" name="INTime"/>
+            </key-property>
+            <key-property name="otl" type="string">
+                <column length="50" name="OTL"/>
+            </key-property>
+            <key-property name="ifl" type="string">
+                <column length="50" name="IFL"/>
+            </key-property>
+            <key-property name="outTime" type="string">
+                <column length="50" name="OutTime"/>
+            </key-property>
+            <key-property name="extraIn" type="string">
+                <column length="50" name="ExtraIN"/>
+            </key-property>
+            <key-property name="extraOut" type="string">
+                <column length="50" name="ExtraOut"/>
+            </key-property>
+            <key-property name="dte" type="date">
+                <column length="10" name="DTE"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
