@@ -16,5 +16,6 @@ Each directory contains a README with information on the contents of the directo
 - [ansible](src/main/ansible/README.md)
 - [java](src/main/java/README.md)
 - [schema](src/main/schema/README.md)
+- [hibernate](src/main/hibernate/README.md)
 
 Note: Target is where java compiles its src directory.
