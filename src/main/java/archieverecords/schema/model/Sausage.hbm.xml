@@ -1,32 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generated Feb 17, 2018 4:24:52 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
-    <class catalog="archieverecords" dynamic-insert="false" dynamic-update="false" mutable="true" name="archieverecords.schema.model.Sausage" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="sausage">
-        <composite-id class="archieverecords.schema.model.SausageId" mapped="false" name="id" unsaved-value="undefined">
-            <key-property name="id" type="java.lang.Double">
-                <column name="ID" precision="22" scale="0"/>
-            </key-property>
-            <key-property name="fullName" type="string">
-                <column length="50" name="FullName"/>
-            </key-property>
-            <key-property name="deer" type="java.lang.Double">
-                <column name="Deer" precision="22" scale="0"/>
-            </key-property>
-            <key-property name="pork" type="java.lang.Double">
-                <column name="Pork" precision="22" scale="0"/>
-            </key-property>
-            <key-property name="sausage" type="java.lang.Double">
-                <column name="Sausage" precision="22" scale="0"/>
-            </key-property>
-            <key-property name="batchNo" type="java.lang.Double">
-                <column name="BatchNO" precision="22" scale="0"/>
-            </key-property>
-            <key-property name="done" type="boolean">
-                <column name="Done"/>
-            </key-property>
-            <key-property name="tpe" type="string">
-                <column length="50" name="Tpe"/>
-            </key-property>
-        </composite-id>
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 24, 2018 12:46:36 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="archieverecords.schema.model.Sausage" table="SAUSAGE">
+        <id name="id" type="archieverecords.schema.model.SausageId">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
     </class>
 </hibernate-mapping>

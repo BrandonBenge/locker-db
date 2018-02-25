@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 24, 2018 12:46:36 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="archieverecords.schema.model.CuringjournalId" table="CURINGJOURNALID">
+        <id name="animalId" type="java.lang.String">
+            <column name="ANIMALID" />
+            <generator class="assigned" />
+        </id>
+        <property name="hams" type="int">
+            <column name="HAMS" />
+        </property>
+        <property name="bacons" type="int">
+            <column name="BACONS" />
+        </property>
+        <property name="ark" type="int">
+            <column name="ARK" />
+        </property>
+        <property name="shoulders" type="int">
+            <column name="SHOULDERS" />
+        </property>
+        <property name="loins" type="int">
+            <column name="LOINS" />
+        </property>
+        <property name="ribs" type="int">
+            <column name="RIBS" />
+        </property>
+        <property name="hocksYn" type="boolean">
+            <column name="HOCKSYN" />
+        </property>
+        <property name="hocks" type="int">
+            <column name="HOCKS" />
+        </property>
+        <property name="jowl" type="int">
+            <column name="JOWL" />
+        </property>
+        <property name="begin" type="java.lang.Integer">
+            <column name="BEGIN" />
+        </property>
+        <property name="end" type="java.lang.Integer">
+            <column name="END" />
+        </property>
+        <property name="weight" type="java.lang.Double">
+            <column name="WEIGHT" />
+        </property>
+        <property name="otherName" type="java.lang.String">
+            <column name="OTHERNAME" />
+        </property>
+        <property name="otherCount" type="int">
+            <column name="OTHERCOUNT" />
+        </property>
+        <property name="deliveryDate" type="java.util.Date">
+            <column name="DELIVERYDATE" />
+        </property>
+    </class>
+</hibernate-mapping>

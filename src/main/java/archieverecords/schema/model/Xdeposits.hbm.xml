@@ -1,47 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generated Feb 17, 2018 4:24:52 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
-    <class catalog="archieverecords" dynamic-insert="false" dynamic-update="false" mutable="true" name="archieverecords.schema.model.Xdeposits" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="xdeposits">
-        <composite-id class="archieverecords.schema.model.XdepositsId" mapped="false" name="id" unsaved-value="undefined">
-            <key-property name="counter" type="long">
-                <column name="Counter"/>
-            </key-property>
-            <key-property name="date" type="date">
-                <column length="10" name="Date"/>
-            </key-property>
-            <key-property name="time" type="timestamp">
-                <column length="26" name="Time"/>
-            </key-property>
-            <key-property name="species" type="string">
-                <column length="4" name="Species"/>
-            </key-property>
-            <key-property name="dprocessing" type="java.lang.Float">
-                <column name="DProcessing" precision="24" scale="0"/>
-            </key-property>
-            <key-property name="processing" type="java.lang.Float">
-                <column name="Processing" precision="24" scale="0"/>
-            </key-property>
-            <key-property name="total" type="java.lang.Float">
-                <column name="Total" precision="24" scale="0"/>
-            </key-property>
-            <key-property name="method" type="string">
-                <column length="10" name="Method"/>
-            </key-property>
-            <key-property name="amount" type="java.lang.Float">
-                <column name="Amount" precision="24" scale="0"/>
-            </key-property>
-            <key-property name="change" type="java.lang.Float">
-                <column name="Change" precision="24" scale="0"/>
-            </key-property>
-            <key-property name="zzed" type="java.lang.Boolean">
-                <column name="Zzed"/>
-            </key-property>
-            <key-property name="name" type="string">
-                <column length="50" name="Name"/>
-            </key-property>
-            <key-property name="xActionNumber" type="long">
-                <column name="xAction#"/>
-            </key-property>
-        </composite-id>
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 24, 2018 12:46:36 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="archieverecords.schema.model.Xdeposits" table="XDEPOSITS">
+        <id name="id" type="archieverecords.schema.model.XdepositsId">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
     </class>
 </hibernate-mapping>

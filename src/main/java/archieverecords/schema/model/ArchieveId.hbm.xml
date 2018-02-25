@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 24, 2018 12:46:36 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="archieverecords.schema.model.ArchieveId" table="ARCHIEVEID">
+        <id name="counter" type="int">
+            <column name="COUNTER" />
+            <generator class="assigned" />
+        </id>
+        <property name="fullName" type="java.lang.String">
+            <column name="FULLNAME" />
+        </property>
+        <property name="deliveryDate" type="java.util.Date">
+            <column name="DELIVERYDATE" />
+        </property>
+        <property name="order" type="java.lang.Integer">
+            <column name="ORDER" />
+        </property>
+        <property name="active" type="java.util.Date">
+            <column name="ACTIVE" />
+        </property>
+        <property name="type" type="java.lang.String">
+            <column name="TYPE" />
+        </property>
+        <property name="hangingWeight" type="java.lang.Double">
+            <column name="HANGINGWEIGHT" />
+        </property>
+        <property name="processing" type="java.math.BigDecimal">
+            <column name="PROCESSING" />
+        </property>
+        <property name="liverWeight" type="java.lang.Double">
+            <column name="LIVERWEIGHT" />
+        </property>
+        <property name="dressedWeight" type="java.lang.Double">
+            <column name="DRESSEDWEIGHT" />
+        </property>
+        <property name="liveWeight" type="java.lang.Float">
+            <column name="LIVEWEIGHT" />
+        </property>
+        <property name="tagNumber" type="java.lang.Float">
+            <column name="TAGNUMBER" />
+        </property>
+        <property name="storage" type="java.lang.Double">
+            <column name="STORAGE" />
+        </property>
+        <property name="totalCharges" type="java.lang.Double">
+            <column name="TOTALCHARGES" />
+        </property>
+        <property name="numberOfBeef" type="java.lang.Float">
+            <column name="NUMBEROFBEEF" />
+        </property>
+        <property name="dress" type="java.lang.Double">
+            <column name="DRESS" />
+        </property>
+        <property name="ztill" type="java.lang.Boolean">
+            <column name="ZTILL" />
+        </property>
+        <property name="cuttingOrder" type="java.lang.Boolean">
+            <column name="CUTTINGORDER" />
+        </property>
+        <property name="age" type="java.lang.Boolean">
+            <column name="AGE" />
+        </property>
+        <property name="owner" type="java.lang.String">
+            <column name="OWNER" />
+        </property>
+        <property name="condit" type="java.lang.String">
+            <column name="CONDIT" />
+        </property>
+        <property name="breed" type="java.lang.String">
+            <column name="BREED" />
+        </property>
+    </class>
+</hibernate-mapping>

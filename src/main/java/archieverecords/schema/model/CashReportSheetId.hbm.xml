@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 24, 2018 12:46:36 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="archieverecords.schema.model.CashReportSheetId" table="CASHREPORTSHEETID">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="month" type="java.lang.Double">
+            <column name="MONTH" />
+        </property>
+        <property name="date" type="java.util.Date">
+            <column name="DATE" />
+        </property>
+        <property name="beginningCash" type="java.math.BigDecimal">
+            <column name="BEGINNINGCASH" />
+        </property>
+        <property name="totalSales" type="java.math.BigDecimal">
+            <column name="TOTALSALES" />
+        </property>
+        <property name="subtotal1" type="java.math.BigDecimal">
+            <column name="SUBTOTAL1" />
+        </property>
+        <property name="paidOuts" type="java.math.BigDecimal">
+            <column name="PAIDOUTS" />
+        </property>
+        <property name="subtotal2" type="java.math.BigDecimal">
+            <column name="SUBTOTAL2" />
+        </property>
+        <property name="deposit" type="java.math.BigDecimal">
+            <column name="DEPOSIT" />
+        </property>
+        <property name="total" type="java.math.BigDecimal">
+            <column name="TOTAL" />
+        </property>
+        <property name="endingCash" type="java.math.BigDecimal">
+            <column name="ENDINGCASH" />
+        </property>
+        <property name="cashOverUnder" type="java.math.BigDecimal">
+            <column name="CASHOVERUNDER" />
+        </property>
+        <property name="meatSales" type="java.math.BigDecimal">
+            <column name="MEATSALES" />
+        </property>
+        <property name="tax" type="java.math.BigDecimal">
+            <column name="TAX" />
+        </property>
+        <property name="nonTax" type="java.math.BigDecimal">
+            <column name="NONTAX" />
+        </property>
+        <property name="lockerRent" type="java.math.BigDecimal">
+            <column name="LOCKERRENT" />
+        </property>
+        <property name="curingandseasoning" type="java.math.BigDecimal">
+            <column name="CURINGANDSEASONING" />
+        </property>
+        <property name="processing" type="java.math.BigDecimal">
+            <column name="PROCESSING" />
+        </property>
+        <property name="porkProcessing" type="java.math.BigDecimal">
+            <column name="PORKPROCESSING" />
+        </property>
+        <property name="deerProcessing" type="java.math.BigDecimal">
+            <column name="DEERPROCESSING" />
+        </property>
+        <property name="dogFood" type="java.math.BigDecimal">
+            <column name="DOGFOOD" />
+        </property>
+        <property name="hides" type="java.math.BigDecimal">
+            <column name="HIDES" />
+        </property>
+        <property name="uniform" type="java.math.BigDecimal">
+            <column name="UNIFORM" />
+        </property>
+        <property name="lunchroom" type="java.math.BigDecimal">
+            <column name="LUNCHROOM" />
+        </property>
+        <property name="personal" type="java.math.BigDecimal">
+            <column name="PERSONAL" />
+        </property>
+        <property name="maintance" type="java.math.BigDecimal">
+            <column name="MAINTANCE" />
+        </property>
+        <property name="donations" type="java.math.BigDecimal">
+            <column name="DONATIONS" />
+        </property>
+        <property name="postal" type="java.math.BigDecimal">
+            <column name="POSTAL" />
+        </property>
+        <property name="medical" type="java.math.BigDecimal">
+            <column name="MEDICAL" />
+        </property>
+        <property name="supplies" type="java.math.BigDecimal">
+            <column name="SUPPLIES" />
+        </property>
+        <property name="meatPurchase" type="java.math.BigDecimal">
+            <column name="MEATPURCHASE" />
+        </property>
+        <property name="otherCat" type="java.math.BigDecimal">
+            <column name="OTHERCAT" />
+        </property>
+        <property name="totalPaidOuts" type="java.math.BigDecimal">
+            <column name="TOTALPAIDOUTS" />
+        </property>
+    </class>
+</hibernate-mapping>

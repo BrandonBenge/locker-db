@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 24, 2018 12:46:36 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="archieverecords.schema.model.SausageId" table="SAUSAGEID">
+        <id name="id" type="java.lang.Double">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="fullName" type="java.lang.String">
+            <column name="FULLNAME" />
+        </property>
+        <property name="deer" type="java.lang.Double">
+            <column name="DEER" />
+        </property>
+        <property name="pork" type="java.lang.Double">
+            <column name="PORK" />
+        </property>
+        <property name="sausage" type="java.lang.Double">
+            <column name="SAUSAGE" />
+        </property>
+        <property name="batchNo" type="java.lang.Double">
+            <column name="BATCHNO" />
+        </property>
+        <property name="done" type="boolean">
+            <column name="DONE" />
+        </property>
+        <property name="tpe" type="java.lang.String">
+            <column name="TPE" />
+        </property>
+    </class>
+</hibernate-mapping>

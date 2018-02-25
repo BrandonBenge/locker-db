@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 24, 2018 12:46:36 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="archieverecords.schema.model.XactionsId" table="XACTIONSID">
+        <id name="counter" type="int">
+            <column name="COUNTER" />
+            <generator class="assigned" />
+        </id>
+        <property name="date" type="java.util.Date">
+            <column name="DATE" />
+        </property>
+        <property name="time" type="java.util.Date">
+            <column name="TIME" />
+        </property>
+        <property name="species" type="java.lang.String">
+            <column name="SPECIES" />
+        </property>
+        <property name="meatSales" type="java.lang.Float">
+            <column name="MEATSALES" />
+        </property>
+        <property name="tax" type="java.lang.Float">
+            <column name="TAX" />
+        </property>
+        <property name="nontax" type="java.lang.Float">
+            <column name="NONTAX" />
+        </property>
+        <property name="lockerRent" type="java.lang.Float">
+            <column name="LOCKERRENT" />
+        </property>
+        <property name="curing" type="java.lang.Float">
+            <column name="CURING" />
+        </property>
+        <property name="processing" type="java.lang.Float">
+            <column name="PROCESSING" />
+        </property>
+        <property name="pprocessing" type="java.lang.Float">
+            <column name="PPROCESSING" />
+        </property>
+        <property name="dprocessing" type="java.lang.Float">
+            <column name="DPROCESSING" />
+        </property>
+        <property name="other" type="java.lang.Float">
+            <column name="OTHER" />
+        </property>
+        <property name="total" type="java.lang.Float">
+            <column name="TOTAL" />
+        </property>
+        <property name="method" type="java.lang.String">
+            <column name="METHOD" />
+        </property>
+        <property name="amount" type="java.lang.Float">
+            <column name="AMOUNT" />
+        </property>
+        <property name="change" type="java.lang.Float">
+            <column name="CHANGE" />
+        </property>
+        <property name="zzed" type="boolean">
+            <column name="ZZED" />
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="multi" type="java.lang.Double">
+            <column name="MULTI" />
+        </property>
+        <property name="TransationNumber" type="java.lang.Double">
+            <column name="TRANSATIONNUMBER" />
+        </property>
+    </class>
+</hibernate-mapping>

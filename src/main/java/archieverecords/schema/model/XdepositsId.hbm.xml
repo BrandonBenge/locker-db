@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 24, 2018 12:46:36 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="archieverecords.schema.model.XdepositsId" table="XDEPOSITSID">
+        <id name="counter" type="long">
+            <column name="COUNTER" />
+            <generator class="assigned" />
+        </id>
+        <property name="date" type="java.util.Date">
+            <column name="DATE" />
+        </property>
+        <property name="time" type="java.util.Date">
+            <column name="TIME" />
+        </property>
+        <property name="species" type="java.lang.String">
+            <column name="SPECIES" />
+        </property>
+        <property name="dprocessing" type="java.lang.Float">
+            <column name="DPROCESSING" />
+        </property>
+        <property name="processing" type="java.lang.Float">
+            <column name="PROCESSING" />
+        </property>
+        <property name="total" type="java.lang.Float">
+            <column name="TOTAL" />
+        </property>
+        <property name="method" type="java.lang.String">
+            <column name="METHOD" />
+        </property>
+        <property name="amount" type="java.lang.Float">
+            <column name="AMOUNT" />
+        </property>
+        <property name="change" type="java.lang.Float">
+            <column name="CHANGE" />
+        </property>
+        <property name="zzed" type="java.lang.Boolean">
+            <column name="ZZED" />
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="xActionNumber" type="long" access="field">
+            <column name="XACTIONNUMBER" />
+        </property>
+    </class>
+</hibernate-mapping>

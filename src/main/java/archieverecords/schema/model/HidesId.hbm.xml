@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 24, 2018 12:46:36 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="archieverecords.schema.model.HidesId" table="HIDESID">
+        <id name="lastId" type="java.lang.Float">
+            <column name="LASTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="date" type="java.util.Date">
+            <column name="DATE" />
+        </property>
+        <property name="poundSign" type="java.lang.Double">
+            <column name="POUNDSIGN" />
+        </property>
+        <property name="amount" type="java.math.BigDecimal">
+            <column name="AMOUNT" />
+        </property>
+        <property name="salt" type="boolean">
+            <column name="SALT" />
+        </property>
+        <property name="saltAmount" type="java.math.BigDecimal">
+            <column name="SALTAMOUNT" />
+        </property>
+        <property name="zed" type="java.lang.Boolean">
+            <column name="ZED" />
+        </property>
+    </class>
+</hibernate-mapping>

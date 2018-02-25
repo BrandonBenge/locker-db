@@ -1,107 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generated Feb 17, 2018 4:24:52 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
-    <class catalog="archieverecords" dynamic-insert="false" dynamic-update="false" mutable="true" name="archieverecords.schema.model.CashReportSheet" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="`cash report sheet`">
-        <composite-id class="archieverecords.schema.model.CashReportSheetId" mapped="false" name="id" unsaved-value="undefined">
-            <key-property name="id" type="int">
-                <column name="ID"/>
-            </key-property>
-            <key-property name="month" type="java.lang.Double">
-                <column name="MONTH" precision="22" scale="0"/>
-            </key-property>
-            <key-property name="date" type="timestamp">
-                <column length="26" name="DATE"/>
-            </key-property>
-            <key-property name="beginningCash" type="big_decimal">
-                <column name="`BEGINNING CASH`" scale="4"/>
-            </key-property>
-            <key-property name="totalSales" type="big_decimal">
-                <column name="`TOTAL SALES`" scale="4"/>
-            </key-property>
-            <key-property name="subtotal1" type="big_decimal">
-                <column name="`SUBTOTAL 1`" scale="4"/>
-            </key-property>
-            <key-property name="paidOuts" type="big_decimal">
-                <column name="`PAID OUTS`" scale="4"/>
-            </key-property>
-            <key-property name="subtotal2" type="big_decimal">
-                <column name="`SUBTOTAL 2`" scale="4"/>
-            </key-property>
-            <key-property name="deposit" type="big_decimal">
-                <column name="DEPOSIT" scale="4"/>
-            </key-property>
-            <key-property name="total" type="big_decimal">
-                <column name="TOTAL" scale="4"/>
-            </key-property>
-            <key-property name="endingCash" type="big_decimal">
-                <column name="`ENDING CASH`" scale="4"/>
-            </key-property>
-            <key-property name="cashOverUnder" type="big_decimal">
-                <column name="`CASH OVER/UNDER`" scale="4"/>
-            </key-property>
-            <key-property name="meatSales" type="big_decimal">
-                <column name="`MEAT SALES`" scale="4"/>
-            </key-property>
-            <key-property name="tax" type="big_decimal">
-                <column name="TAX" scale="4"/>
-            </key-property>
-            <key-property name="nonTax" type="big_decimal">
-                <column name="`NON TAX`" scale="4"/>
-            </key-property>
-            <key-property name="lockerRent" type="big_decimal">
-                <column name="`LOCKER RENT`" scale="4"/>
-            </key-property>
-            <key-property name="curingandseasoning" type="big_decimal">
-                <column name="CURINGANDSEASONING" scale="4"/>
-            </key-property>
-            <key-property name="processing" type="big_decimal">
-                <column name="PROCESSING" scale="4"/>
-            </key-property>
-            <key-property name="porkProcessing" type="big_decimal">
-                <column name="PorkProcessing" scale="4"/>
-            </key-property>
-            <key-property name="deerProcessing" type="big_decimal">
-                <column name="DeerProcessing" scale="4"/>
-            </key-property>
-            <key-property name="dogFood" type="big_decimal">
-                <column name="`DOG FOOD`" scale="4"/>
-            </key-property>
-            <key-property name="hides" type="big_decimal">
-                <column name="HIDES" scale="4"/>
-            </key-property>
-            <key-property name="uniform" type="big_decimal">
-                <column name="UNIFORM" scale="4"/>
-            </key-property>
-            <key-property name="lunchroom" type="big_decimal">
-                <column name="LUNCHROOM" scale="4"/>
-            </key-property>
-            <key-property name="personal" type="big_decimal">
-                <column name="PERSONAL" scale="4"/>
-            </key-property>
-            <key-property name="maintance" type="big_decimal">
-                <column name="MAINTANCE" scale="4"/>
-            </key-property>
-            <key-property name="donations" type="big_decimal">
-                <column name="DONATIONS" scale="4"/>
-            </key-property>
-            <key-property name="postal" type="big_decimal">
-                <column name="POSTAL" scale="4"/>
-            </key-property>
-            <key-property name="medical" type="big_decimal">
-                <column name="MEDICAL" scale="4"/>
-            </key-property>
-            <key-property name="supplies" type="big_decimal">
-                <column name="SUPPLIES" scale="4"/>
-            </key-property>
-            <key-property name="meatPurchase" type="big_decimal">
-                <column name="MeatPurchase" scale="4"/>
-            </key-property>
-            <key-property name="otherCat" type="big_decimal">
-                <column name="OtherCat" scale="4"/>
-            </key-property>
-            <key-property name="totalPaidOuts" type="big_decimal">
-                <column name="`TOTAL PAID OUTS`" scale="4"/>
-            </key-property>
-        </composite-id>
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 24, 2018 12:46:36 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="archieverecords.schema.model.CashReportSheet" table="CASHREPORTSHEET">
+        <id name="id" type="archieverecords.schema.model.CashReportSheetId">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
     </class>
 </hibernate-mapping>

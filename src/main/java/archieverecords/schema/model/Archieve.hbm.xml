@@ -1,74 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generated Feb 17, 2018 4:24:52 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
-    <class catalog="archieverecords" dynamic-insert="false" dynamic-update="false" mutable="true" name="archieverecords.schema.model.Archieve" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="archieve">
-        <composite-id class="archieverecords.schema.model.ArchieveId" mapped="false" name="id" unsaved-value="undefined">
-            <key-property name="counter" type="int">
-                <column name="Counter"/>
-            </key-property>
-            <key-property name="fullName" type="string">
-                <column length="50" name="`Full Name`"/>
-            </key-property>
-            <key-property name="deliveryDate" type="date">
-                <column length="10" name="DeliveryDate"/>
-            </key-property>
-            <key-property name="order" type="java.lang.Integer">
-                <column name="Order"/>
-            </key-property>
-            <key-property name="active" type="date">
-                <column length="10" name="Active"/>
-            </key-property>
-            <key-property name="type" type="string">
-                <column length="5" name="Type"/>
-            </key-property>
-            <key-property name="hangingWeight" type="java.lang.Double">
-                <column name="`hanging weight`" precision="22" scale="0"/>
-            </key-property>
-            <key-property name="processing" type="big_decimal">
-                <column name="Processing" scale="4"/>
-            </key-property>
-            <key-property name="liverWeight" type="java.lang.Double">
-                <column name="`Liver Weight`" precision="22" scale="0"/>
-            </key-property>
-            <key-property name="dressedWeight" type="java.lang.Double">
-                <column name="`Dressed Weight`" precision="22" scale="0"/>
-            </key-property>
-            <key-property name="liveWeight" type="java.lang.Float">
-                <column name="`Live Weight`" precision="24" scale="0"/>
-            </key-property>
-            <key-property name="tagNumber" type="java.lang.Float">
-                <column name="`Tag Number`" precision="24" scale="0"/>
-            </key-property>
-            <key-property name="storage" type="java.lang.Double">
-                <column name="Storage" precision="22" scale="0"/>
-            </key-property>
-            <key-property name="totalCharges" type="java.lang.Double">
-                <column name="`Total Charges`" precision="22" scale="0"/>
-            </key-property>
-            <key-property name="numberOfBeef" type="java.lang.Float">
-                <column name="`Number Of Beef`" precision="24" scale="0"/>
-            </key-property>
-            <key-property name="dress" type="java.lang.Double">
-                <column name="Dress" precision="22" scale="0"/>
-            </key-property>
-            <key-property name="ztill" type="java.lang.Boolean">
-                <column name="ZTill"/>
-            </key-property>
-            <key-property name="cuttingOrder" type="java.lang.Boolean">
-                <column name="CuttingOrder"/>
-            </key-property>
-            <key-property name="age" type="java.lang.Boolean">
-                <column name="Age"/>
-            </key-property>
-            <key-property name="owner" type="string">
-                <column length="50" name="Owner"/>
-            </key-property>
-            <key-property name="condit" type="string">
-                <column length="50" name="Condit"/>
-            </key-property>
-            <key-property name="breed" type="string">
-                <column length="50" name="Breed"/>
-            </key-property>
-        </composite-id>
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 24, 2018 12:46:36 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="archieverecords.schema.model.Archieve" table="ARCHIEVE">
+        <id name="id" type="archieverecords.schema.model.ArchieveId">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
     </class>
 </hibernate-mapping>
