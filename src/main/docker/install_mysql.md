@@ -1,6 +1,6 @@
 # install the database in a docker container
 Should be noted that this is very manual at this time but I hope to move this to ansible.
-
+https://docs.docker.com/docker-for-mac/install/#what-to-know-before-you-install
 ## install install tools for mac
 sudo easy_install pip
 
