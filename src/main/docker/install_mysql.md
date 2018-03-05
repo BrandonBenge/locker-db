@@ -4,7 +4,7 @@ Should be noted that this is very manual at this time but I hope to move this to
 ## install install tools for mac
 sudo easy_install pip
 
-pip install docker
+sudo pip install docker
 
 sudo pip install docker-py
 
